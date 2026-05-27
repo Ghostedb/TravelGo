@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Alt gölge -->
+    <item
+        android:top="3dp"
+        android:left="2dp"
+        android:right="2dp">
+
+        <shape android:shape="rectangle">
+            <solid android:color="#1A009DFF"/>
+            <corners android:radius="28dp"/>
+        </shape>
+    </item>
+
+    <!-- Ana buton -->
+    <item>
+        <shape android:shape="rectangle">
+
+            <!-- Yukarıdan aşağı gradient -->
+            <gradient
+                android:startColor="#28C6FF"
+                android:endColor="#00AEEF"
+                android:angle="270"/>
+
+            <corners android:radius="28dp"/>
+
+            <padding
+                android:left="32dp"
+                android:top="14dp"
+                android:right="32dp"
+                android:bottom="14dp"/>
+        </shape>
+    </item>
+
+</layer-list>

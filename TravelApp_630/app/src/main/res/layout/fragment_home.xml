@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="HomeFragment"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/deniz"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="17dp"
+                app:srcCompat="@drawable/airplane1" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/candara"
+                android:textStyle="bold"
+                android:text="Şehrinizi Seçin Ona Göre\nSeyahat Edin"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="360dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="24dp"
+            android:translationY="-28dp"
+            app:endIconDrawable="@drawable/buyutec"
+            app:endIconMode="custom"
+            app:endIconTint="#9AA3AE"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headerLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/searchBox"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:background="@drawable/edit_text_custom"
+                android:hint="Ülkeye Göre Şehir Araması Yapın"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:includeFontPadding="false"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="POPÜLER ŞEHİRLER"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:fillViewport="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="275dp"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="255dp"
+                    android:layout_height="256dp"
+                    android:layout_marginEnd="12dp"
+                    app:cardCornerRadius="57dp"
+                    app:cardElevation="4dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="46dp"
+                        app:cardCornerRadius="57dp">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:layout_marginBottom="190dp"
+                            app:srcCompat="@drawable/roma_2" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="158dp"
+                        android:fontFamily="@font/ariala"
+                        android:text="ROMA"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="188dp"
+                        android:fontFamily="@font/ariala"
+                        android:text="Roma mekanlarına\nbilet alın"
+                        android:textColor="#BFBABA"
+                        android:textSize="16dp" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imageButtonRoma"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="188dp"
+                        android:layout_marginTop="182dp"
+                        android:background="@drawable/buttonleft2" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="265dp"
+                    android:layout_height="256dp"
+                    android:layout_marginEnd="12dp"
+                    app:cardCornerRadius="57dp"
+                    app:cardElevation="4dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="46dp"
+                        app:cardCornerRadius="57dp">
+
+                        <ImageView
+                            android:id="@+id/imageViewBerlin"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_marginBottom="190dp"
+                            app:srcCompat="@drawable/berlin" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/textViewBerlin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="158dp"
+                        android:fontFamily="@font/ariala"
+                        android:text="Berlin"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="181dp"
+                        android:fontFamily="@font/ariala"
+                        android:text="Berlin mekanlarına\nbilet alın"
+                        android:textColor="#BFBABA"
+                        android:textSize="16dp" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imageButtonBerlin"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="198dp"
+                        android:layout_marginTop="169dp"
+                        android:background="@drawable/buttonleft2" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="265dp"
+                    android:layout_height="256dp"
+                    android:layout_marginEnd="12dp"
+                    app:cardCornerRadius="57dp"
+                    app:cardElevation="4dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="46dp"
+                        app:cardCornerRadius="57dp">
+
+                        <ImageView
+                            android:id="@+id/imageViewTokyo"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_marginBottom="190dp"
+                            app:srcCompat="@drawable/tokyo" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/textViewTokyo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="158dp"
+                        android:fontFamily="@font/ariala"
+                        android:text="Tokyo"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="181dp"
+                        android:fontFamily="@font/ariala"
+                        android:text="Tokyo mekanlarına\nbilet alın"
+                        android:textColor="#BFBABA"
+                        android:textSize="16dp" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imageButtonTokyo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="198dp"
+                        android:layout_marginTop="169dp"
+                        android:background="@drawable/buttonleft2" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Şehirler"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:layout_marginRight="9dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="4dp"
+                    app:strokeColor="#BCBCBC"
+                    app:strokeWidth="3dp">
+
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imageButtonMadrid"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bank" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="63dp"
+                        android:text="Madrid" />
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:layout_marginRight="9dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="4dp"
+                    app:strokeColor="#BCBCBC"
+                    app:strokeWidth="3dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imageButtonTokyoCity"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/city" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="63dp"
+                        android:text="Tokyo" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:layout_marginRight="9dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="4dp"
+                    app:strokeColor="#BCBCBC"
+                    app:strokeWidth="3dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imageButtonNewYork"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/airplane" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="63dp"
+                        android:text="New York" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:layout_marginRight="9dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="4dp"
+                    app:strokeColor="#BCBCBC"
+                    app:strokeWidth="3dp">
+
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imageButtonLondon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+
+                        android:background="@drawable/global" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="63dp"
+                        android:text="London" />
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:layout_marginRight="9dp"
+                    app:cardBackgroundColor="#C1BEBE"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="4dp"
+                    app:strokeColor="#BCBCBC"
+                    app:strokeWidth="3dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imageButtonGlobal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="18dp"
+                        app:srcCompat="@drawable/nokta" />
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

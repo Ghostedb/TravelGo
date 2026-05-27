@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btnBack2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/white"
+                android:contentDescription="Geri"
+                android:src="@drawable/left_arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/toolbarTitleBolge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/geometos"
+                android:letterSpacing="0.09"
+                android:text="BERLİN SARAYI"
+                android:textColor="#000000"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageButtonSearch"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="348dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/search" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="40dp">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="308dp"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@drawable/berlin" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="339dp"
+                android:layout_height="734dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-128dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView31"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    app:srcCompat="@drawable/pin"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="26dp"/>
+
+                <TextView
+                    android:id="@+id/textView60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Berlin/Almanya"
+                    android:fontFamily="@font/geometos"
+                    android:textColor="#127ED1"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginLeft="59dp"/>
+
+                <TextView
+                    android:id="@+id/textView61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Berlin Sarayı"
+                    android:fontFamily="@font/geometos"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginLeft="26dp"/>
+
+                <TextView
+                    android:id="@+id/textView62"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Neo-Rönesans tarzında inşa edilmiştir. Tarihi taş yapı korunmuş, üstüne modern cam kubbe eklenmiştir.
+Alman İmparatorluğu, Weimar Cumhuriyeti, Nazi dönemi ve günümüz Almanyası olmak üzere ülkenin tüm kritik dönemlerine tanıklık etmiştir."
+                    android:layout_gravity="center"
+                    android:textSize="13sp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="178dp"/>
+
+                <View
+                    android:id="@+id/long_divider"
+                    android:layout_width="286dp"
+                    android:layout_gravity="center"
+                    android:layout_height="1dp"
+                    android:background="#646161"
+                    android:layout_marginBottom="98dp"/>
+
+                <LinearLayout
+                    android:layout_width="286dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="58dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView63"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bahnschrift"
+                        android:text="Ziyaretçi"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="28dp"/>
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bahnschrift"
+                        android:layout_marginLeft="118dp"
+                        android:textSize="15sp"
+                        android:text="Bilet Türü" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="286dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="28dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView630"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bahnschrift"
+                        android:text="Anıl Cemre SAÇAK"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textView640"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bahnschrift"
+                        android:text="Öğrenci Bileti"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="286dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="88dp"
+                    android:layout_marginBottom="58dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView6301"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="18dp"
+                        android:fontFamily="@font/bahnschrift"
+                        android:text="Geçerlilik Tarihi"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView6401"
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="68dp"
+                        android:fontFamily="@font/bahnschrift"
+                        android:text="Ödenen Fiyat"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="286dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="88dp"
+                    android:layout_marginBottom="28dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView6300"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bahnschrift"
+                        android:text="26/05/2026 21:00"
+                        android:textAlignment="center"
+                        android:layout_marginLeft="28dp"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textView6400"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bahnschrift"
+                        android:text="€80,00"
+                        android:layout_marginRight="30dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="234dp"
+                    android:layout_height="222dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="188dp"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageView
+                        android:id="@+id/imageView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView65"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Taşınabilir Giriş Kartı"
+                    android:fontFamily="@font/ariala"
+                    android:textColor="@color/black"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="36dp"
+                    android:layout_marginLeft="78dp"/>
+
+                <TextView
+                    android:id="@+id/textView651"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lütfen Bunu Giriş Kapısında Gösterin"
+                    android:fontFamily="@font/ariala"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="701dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonPDF"
+                android:layout_width="329dp"
+                android:layout_height="62dp"
+                android:text="Giriş Biletini Yükle (PDF)"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                app:cornerRadius="30dp"
+                android:textStyle="bold"
+                app:icon="@drawable/downloads"
+                app:iconSize="24dp"
+                app:iconGravity="textStart"
+                android:fontFamily="@font/bahnschrift"
+                android:backgroundTint="#135BEC"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonTakvim"
+                android:layout_width="329dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center"
+                app:cornerRadius="30dp"
+                android:layout_marginTop="18dp"
+                android:text="Takvime Ekle"
+                android:textStyle="bold"
+                android:textColor="#FBFBFB"
+                app:iconSize="24dp"
+                app:iconTint="#135BEC"
+                app:iconGravity="textStart"/>
+
+            <TextView
+                android:id="@+id/textView66"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bir Sorun Mu Oldu?"
+                android:textAlignment="center"
+                android:layout_marginTop="26dp"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textView67"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Destek Ekibimiz İle İletişime Geçin"
+                android:fontFamily="@font/bahnschrift"
+                android:textColor="#135BEC"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginTop="8dp"/>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

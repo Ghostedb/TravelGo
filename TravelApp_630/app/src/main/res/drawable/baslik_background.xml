@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Alt gölge (3D hissi) -->
+    <item
+        android:left="2dp"
+        android:top="3dp"
+        android:right="2dp"
+        android:bottom="1dp">
+
+        <shape android:shape="rectangle">
+            <solid android:color="#1A3B7CFF"/>
+            <corners android:radius="50dp"/>
+        </shape>
+    </item>
+
+    <!-- Ana kutu -->
+    <item>
+        <shape android:shape="rectangle">
+
+            <!-- Yukarıdan aşağı hava gibi geçiş -->
+            <gradient
+                android:endColor="@color/white"
+                android:centerColor="@color/white"
+                android:startColor="@color/white"
+                android:angle="270"/>
+
+            <!-- Hap formu -->
+            <corners android:radius="50dp"/>
+
+            <!-- Çok hafif kenar -->
+            <stroke
+                android:width="1dp"
+                android:color="#D6E2FF"/>
+
+            <!-- İç boşluk -->
+            <padding
+                android:left="20dp"
+                android:top="8dp"
+                android:right="20dp"
+                android:bottom="8dp"/>
+        </shape>
+    </item>
+
+</layer-list>

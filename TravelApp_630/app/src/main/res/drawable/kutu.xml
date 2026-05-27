@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 1. Çok hafif dış gölge taklidi (alt sağa offset) -->
+    <item android:top="6dp" android:left="6dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#0A000000"/> <!-- siyah %6 alpha -->
+            <corners android:radius="60dp"/>
+        </shape>
+    </item>
+
+    <!-- 2. Ana beyaz yüzey (hafif gradient ile) -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#FFFFFFFF"
+                android:centerColor="#FFF7F7F7"
+                android:endColor="#FFFBFBFB"
+                android:angle="270"/>
+            <corners android:radius="60dp"/>
+            <stroke android:width="1dp" android:color="#10000000"/>
+        </shape>
+    </item>
+
+    <!-- 3. Üst solda hafif parlama (bevel/highlight) -->
+    <item android:top="2dp" android:left="2dp" android:right="8dp" android:bottom="8dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#40FFFFFF"
+                android:endColor="#00FFFFFF"
+                android:angle="270"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+
+    <!-- 4. İç kenar için çok hafif iç gölge (opsiyonel, daha derin görünüm) -->
+    <item android:top="6dp" android:left="6dp" android:right="6dp" android:bottom="6dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#00FFFFFF"/>
+            <corners android:radius="16dp"/>
+            <padding android:left="0dp" android:top="0dp" android:right="0dp" android:bottom="0dp"/>
+            <size android:width="0dp" android:height="0dp"/>
+        </shape>
+    </item>
+
+</layer-list>
