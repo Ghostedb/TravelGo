@@ -2,8 +2,7 @@
 Android Studio ile geliştirilmiştir Mobil Uygulamalar Projesidir
 
 🔒 Giriş Bilgileri
-E-mail = admin
-password = 1234
+E-mail = admin, Password = 1234
 
 🚀 Öne Çıkan Özellikler
 Gelişmiş Keşif Ekranı (SearchFragment): Popüler ve öne çıkan dünya destinasyonlarının (Ayasofya, Eyfel Kulesi, Kolezyum, Tokyo vb.) kategorize edilerek listelenmesi.
